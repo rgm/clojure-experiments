@@ -1,0 +1,9 @@
+{:linters {:unused-namespace {:exclude [rgm.state]}
+           :unused-referred-var {:exclude {integrant.repl [clear
+                                                           go
+                                                           halt
+                                                           prep
+                                                           reset
+                                                           reset-all]}}
+           :unresolved-symbol
+           {:exclude [(devcards.core/defcard-rg)]}}}

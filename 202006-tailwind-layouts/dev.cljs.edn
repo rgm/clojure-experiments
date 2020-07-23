@@ -1,0 +1,11 @@
+^{:extra-main-files {:devcards {:main rgm.devcards}}}
+{:main rgm.core
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true
+                   goog.DEBUG true}
+ :devcards true ;; nb: defcard no-ops without this set
+ :preloads [day8.re-frame-10x.preload
+            devtools.preload]
+ :infer-externs true
+ :verbose true
+ :output-dir "target/public/cljs-out/dev"
+ :output-to "target/public/cljs-out/dev-main.js"}
